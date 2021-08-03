@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/kiosk.github.io/static/js/main.2e2fcbf6.chunk.js",
+    "main.js.map": "/kiosk.github.io/static/js/main.2e2fcbf6.chunk.js.map",
+    "runtime-main.js": "/kiosk.github.io/static/js/runtime-main.229f1dc1.js",
+    "runtime-main.js.map": "/kiosk.github.io/static/js/runtime-main.229f1dc1.js.map",
+    "static/js/2.2f1da775.chunk.js": "/kiosk.github.io/static/js/2.2f1da775.chunk.js",
+    "static/js/2.2f1da775.chunk.js.map": "/kiosk.github.io/static/js/2.2f1da775.chunk.js.map",
+    "index.html": "/kiosk.github.io/index.html",
+    "static/js/2.2f1da775.chunk.js.LICENSE.txt": "/kiosk.github.io/static/js/2.2f1da775.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.229f1dc1.js",
+    "static/js/2.2f1da775.chunk.js",
+    "static/js/main.2e2fcbf6.chunk.js"
+  ]
+}
