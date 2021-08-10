@@ -1,17 +1,16 @@
 import React from 'react'
-import styled from 'styled-components'
-
-const Div = styled.div`
-height: 1800px;
-
-`
-
-
+import HeroSection from '../../components/HeroSection/HeroSection'
+import SlideSection from '../../components/SlideSection/SlideSection'
+import { homeObjOne, homeObjTwo, homeObjThree } from './Data'
 
 const Home = () => {
     return (
-      <Div>
-      </Div>
+      <>
+          <HeroSection />
+          <SlideSection {...homeObjOne}/>
+          <SlideSection {...homeObjTwo}/>
+          <SlideSection {...homeObjThree}/>
+      </>
     )
 }
 

@@ -55,7 +55,7 @@ display: none;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate()(-100%, 60%);
+    transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
 }
@@ -125,6 +125,16 @@ export const NavItemBtn = styled.li`
     height: 120px;
 }
 `
-
+export const NavBtnLink = styled(Link)`
+display: flex;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+padding: 8px 16px;
+height: 100%;
+width: 100%;
+border: none;
+outline: none;
+`
 
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import { IconContext } from 'react-icons/lib'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { Nav, NavbarContainer, NavLogo, NavIcon, MobileIcon, NavMenu, NavItem, NavLinks, NavItemBtn, NavBtnLink } from './Navbar.elements'
+import { Button } from '../../globalStyle';
 
 const throttle = function (callback, waitTime) {
     let timerId = null;
@@ -15,11 +16,12 @@ const throttle = function (callback, waitTime) {
 };
 
 
-const Navbar = (callback, waitTime) => {
+const Navbar = () => {
     
 
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
+
     const [pageY, setPageY] = useState(0);
     const documentRef = useRef(document);
 
@@ -73,6 +75,29 @@ const Navbar = (callback, waitTime) => {
                             <NavItem>
                                 <NavLinks className={hide && 'hide'} to="/kiosk">키오스크</NavLinks>
                             </NavItem>
+                            <NavItem>
+                                <NavLinks className={hide && 'hide'} to="/program">객실관리프로그램</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks className={hide && 'hide'} to="/engine">부킹엔진</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks className={hide && 'hide'} to="/introduce">회사소개</NavLinks>
+                            </NavItem>
+                            
+                            <NavItemBtn>
+                                {button ? (
+                                    <NavBtnLink to="/sign-up">
+                                        <Button primary>SIGN UP</Button>
+                                    </NavBtnLink>
+                                ) : (
+                                    <NavBtnLink to="/sign-up">
+                                        <Button fontBig primary>
+                                            SIGN UP
+                                        </Button>
+                                    </NavBtnLink>
+                                )}
+                            </NavItemBtn>
                         </NavMenu>
 
                     </NavbarContainer>
